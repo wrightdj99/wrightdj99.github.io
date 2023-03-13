@@ -155,8 +155,13 @@
 										<p>Now, our library can be split up into three different parts for description sake based on different commands from the user interface.</p>
 										<ul>
 											<li>Part 1: add, get, del</li>
-											<p>These are your simple linked list functions to add an item to the library, to get an item's index, or to delete an item. Fairly simple to implement, and even simpler to use! Just type in <b>get</b>, <b>add</b> or <b>del</b> followed by a space and the item you want to work with. Add or del shouldn't have a confirmation message, only <b>get</b> should actually return anything as shown below.</p>
-											<img src="https://user-images.githubusercontent.com/60994655/224795581-6fb00ad6-3401-4549-850e-b33014ecb029.png" width="530" height="350"/>
+											<p>These are your simple linked list functions to add an item to the library, to get an item's index, or to delete an item. Fairly simple to implement, and even simpler to use! Just type in <b>get</b>, <b>add</b> or <b>del</b> followed by a space and the item you want to work with. Add or del shouldn't have a confirmation message, only <b>get</b> should actually return anything as shown below. Furthermore, trying to delete or get an item that's not in the library shoudn't return any error messages.</p>
+											<img src="https://user-images.githubusercontent.com/60994655/224795581-6fb00ad6-3401-4549-850e-b33014ecb029.png" width="550" height="300"/>
+											<li>Part 2: dmp, siz, clr</li>
+											<p>These are probably the simplest functions in the project. For the <b>dmp</b> command, all that happens is the whole library gets dumped out on the command line. The command <b>siz</b> gets you the size of the library onto the command line. Last but not least, <b>clr</b> just clears out the whole library and doesn't return anything. None of these commands in Part 2 require any following argument, just type in <b>siz</b>, <b>clr</b> or <b>dmp</b> and hit Enter.</p>
+											<li>Part 3: svf, ldf, snd</li>
+											<p>Well, we're now mostly done with the linked list structure that's holding all our data. Part Three shows some of Python's more advanced functionality like writing and reading files, creating mail servers that connect to the Internet, as well as communicating with the OS. The command <b>svf</b> saves a user-named file that contains all the content of the library thus far. When doing this, it's important to make sure to also write a quick "\n" onto the end of each entry! After a user saves a file, <b>ldf</b> just deals with loading the file's contents back into the library. I had to make sure to delete the extra "\n" character at the end of each entry. Finally, <b>snd</b> deals with setting up a mail server to email a user-saved file from one email address to another.</p>
+											<p>This final step was a little bit tricky to implement with Google's new security rules in place. Both in the code and in the README for the project, I've included a link to a Stackoverflow article that helped me configure my own Gmail account to make this work. Other than that, while the mail server code may not be super original, I've still heavily commented the code to show what I'm doing.</p>
 										</ul>
 										
 									<a href="https://github.com/wrightdj99/weatherapp">Weather App</a>
@@ -172,7 +177,7 @@
 								<hr>
 								<h2 id="sqlApp" class="major">SQL Database Work</h2>
 								<hr>
-								<p><strong>Some work from a SQL Databases class I took</strong></p>
+								<p><strong>Some work from a SQL Databases class I took. UPDATE (November, 2022): For more complete SQL work, check out some of my web apps!</strong></p>
 								<hr>
 								<a href="https://github.com/wrightdj99/IntroductorySQL">Introductory Database Work</a>
 										<p>These two SQL files in this repository are from the first homework assignment I completed for a SQL class that I took at DePaul University in the Spring Quarter of 2021. To learn more about how relational databases work, I was given data from a furniture store and performed basic SQL operations to learn more about said furniture store and their clientele.</p>
